@@ -36,7 +36,6 @@ export default class Post extends React.Component {
                 </div>
                 )}
               </article>
-              <h1 className="post-title">{_.get(this.props, 'page.title', null)}</h1>
             </Layout>
         );
     }
