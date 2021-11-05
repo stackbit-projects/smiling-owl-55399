@@ -36,7 +36,7 @@ export default class Post extends React.Component {
                   qwe</div>
                   )}
               </article>
-              <h1 className="post-title">{_.get(this.props, 'page.sectionImageAndText50And50.displayField', null)}</h1>
+              <h1 className="post-title">{_.get(this.props, 'page.sectionImageAndText50And50.heading', null)}</h1>
             </Layout>
         );
     }
