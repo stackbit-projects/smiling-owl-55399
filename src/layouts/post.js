@@ -31,7 +31,7 @@ export default class Post extends React.Component {
                   {markdownify(_.get(this.props, 'page.content', null))}
                 </div>
                 <div className="post-content inner-md">
-                  {markdownify(_.get(this.props, 'page.content', null))}
+                  {markdownify(_.get(this.props, 'page.', null))}
                 </div>
               </article>
             </Layout>
