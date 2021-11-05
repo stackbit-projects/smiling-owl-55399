@@ -32,7 +32,7 @@ export default class Post extends React.Component {
                 </div>
                 {_.get(this.props, 'page.subtitle', null) && (
                   <div className="post-subtitle">
-                    {htmlToReact(_.get(this.props, 'page.sectionImageAndText50And50.', null))}
+                    {htmlToReact(_.get(this.props, 'page.sec', null))}
                   </div>
                   )}
               </article>
