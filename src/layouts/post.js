@@ -30,7 +30,7 @@ export default class Post extends React.Component {
                 <div className="post-content inner-md">
                   {markdownify(_.get(this.props, 'page.content', null))}
                 </div>
-                {_.get(this.props, 'page.subtitle', null) && (
+                {_.get(this.props, 'page.sectionImageWithText', null) && (
                   <div className="post-subtitle">asd
                     {htmlToReact(_.get(this.props, 'page.sectionImageWithText[0].heading', null))}
                   qwe</div>
