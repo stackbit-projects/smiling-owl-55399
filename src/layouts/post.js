@@ -34,6 +34,9 @@ export default class Post extends React.Component {
                 <div className="post-subtitle">
                   {htmlToReact(_.get(this.props, 'page.sectionImageWithText[0].heading', null))}
                 </div>
+                <div className="post-subtitle">
+                  {htmlToReact(_.get(this.props, 'page.sectionImageWithText[0].heading', null))}
+                </div>
                 )}
               </article>
             </Layout>
