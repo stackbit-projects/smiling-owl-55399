@@ -33,12 +33,12 @@ export default class Post extends React.Component {
                 
                 {_.get(this.props, 'page.sectionImageWithText', null) && (
                 <div className="post-content inner-md">
-                  {htmlToReact(_.get(this.props, 'page.sectionImageWithText[0].heading', null))}
-                  {markdownify(_.get(this.props, 'page.sectionImageWithText[0].text', null))}
-                  {markdownify(_.get(this.props, 'page.sectionImageWithText[0].image.title', null))}
-                  <img className="thumbnail" src={withPrefix(_.get(this.props, 'page.sectionImageWithText[0].image', null))} alt={_.get(this.props, 'page.sectionImageWithText[0].image.title', null)} />               
                   {htmlToReact(_.get(this.props, 'page.sectionImageWithText[1].heading', null))}
                   {markdownify(_.get(this.props, 'page.sectionImageWithText[1].text', null))}
+                  {markdownify(_.get(this.props, 'page.sectionImageWithText[1].image.title', null))}
+                  <img className="thumbnail" src={withPrefix(_.get(this.props, 'page.sectionImageWithText[0].image', null))} alt={_.get(this.props, 'page.sectionImageWithText[0].image.title', null)} />               
+                  {htmlToReact(_.get(this.props, 'page.sectionImageWithText[2].heading', null))}
+                  {markdownify(_.get(this.props, 'page.sectionImageWithText[2].text', null))}
                 </div>
                 )}
               </article>
